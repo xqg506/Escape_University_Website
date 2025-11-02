@@ -236,7 +236,7 @@ body {
 }
 
 /* Overview */
-#overview h2, #features h2, #documents h2 {
+#overview h2, #features h2, #documents h2, #sequence-diagrams h2, #class-diagrams h2, #ecs h2, #ecs h1 {
     color: #ffb84d;
     text-align: left;
     margin-bottom: 1rem;
@@ -279,5 +279,131 @@ body {
     .nav a {
         margin: 0.5rem;
         font-size: 0.8rem;
+    }
+}
+
+/* 下拉菜单样式 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgba(26, 26, 46, 0.95);
+    min-width: 200px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 184, 77, 0.3);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: #e8e6e3;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    background: rgba(255, 184, 77, 0.2);
+    color: #ffb84d;
+    padding-left: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropbtn::after {
+    content: " ▼";
+    font-size: 0.7em;
+    opacity: 0.7;
+}
+
+
+/* Sequence Diagrams 样式 */
+.diagram-section {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.diagram-section h3 {
+    color: #ffb84d;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    border-bottom: 2px solid rgba(255, 184, 77, 0.3);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.diagram-container {
+    width: fit-content;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.diagram-container:hover {
+    border-color: #ffb84d;
+    box-shadow: 0 8px 25px rgba(255, 184, 77, 0.2);
+}
+
+.diagram-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s;
+    border-radius: 8px;
+}
+
+.diagram-container:hover img {
+    transform: scale(1.02);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .diagram-container {
+        padding: 0.8rem;
+        height: 300px;
+        max-width: 100%;
+    }
+
+    .diagram-section {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .diagram-container {
+        height: 250px;
+    }
+
+    .diagram-section h3 {
+        font-size: 1.1rem;
     }
 }

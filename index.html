@@ -28,9 +28,16 @@
         <nav class="nav">
             <a href="#overview">Overview</a>
             <a href="#features">Features</a>
-            <a href="#team">Our Team</a>
+<!--            <a href="#team">Our Team</a>-->
             <a href="#documents">Project Docs</a>
-            <a href="#demo">Demo</a>
+            <div class="dropdown">
+                <a href="#architecture-design" class="dropbtn">Architecture Design </a>
+                <div class="dropdown-content">
+                    <a href="#sequence-diagrams">Sequence Diagrams</a>
+                    <a href="#class-diagrams">Class Diagrams</a>
+                    <a href="#ecs">Entity-Component-System</a>
+                </div>
+            </div>
         </nav>
     </div>
 </header>
@@ -52,16 +59,24 @@
                     <a href="https://docs.google.com/document/d/1uSEUkTx7TwjhC9__4GRph_KiIIABtbI6sEMNmyF-NJw/edit?usp=sharing" class="doc-link">Risk Assessment Document</a>
                 </div>
                 <div class="doc-item">
-                    <span class="doc-title">Planning Report</span>
-                    <a href="https://docs.google.com/document/d/1UE9rLKW1BYWGNhiBdfwcW9eboLEKlev7v0U4jK-RM5k/edit?usp=sharing" class="doc-link">Planning Document</a>
+                    <span class="doc-title">Method</span>
+                    <a href="https://docs.google.com/document/d/1UE9rLKW1BYWGNhiBdfwcW9eboLEKlev7v0U4jK-RM5k/edit?usp=sharing" class="doc-link">Method Selection & Planning Document</a>
                 </div>
                 <div class="doc-item">
                     <span class="doc-title">Implementation</span>
                     <a href="https://docs.google.com/document/d/1oThx34QZ7k7ykyu3dpDQm_c8Oz8JjbUf8P1NA73_sao/edit?usp=sharing" class="doc-link">Implementation Document</a>
                 </div>
                 <div class="doc-item">
+                    <span class="doc-title">Executables</span>
+                    <a href="" class="doc-link">Game</a>
+                </div>
+                <div class="doc-item">
                     <span class="doc-title">Version Control</span>
                     <a href="https://github.com/Team-6-ENG/Escape_Uni" class="doc-link">View on GitHub</a>
+                </div>
+                <div class="doc-item">
+                    <span class="doc-title">Java Doc</span>
+                    <a href="https://docs.oracle.com/en/java/javase/17/docs/api/" class="doc-link">Java 17 Document</a>
                 </div>
             </div>
         </div>
@@ -219,6 +234,76 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section id="sequence-diagrams" class="section">
+        <div class="container">
+            <div class="diagram-section">
+                <h2>Event Sequence</h2>
+                <div class="diagram-container">
+                    <img src="assets/images/SequenceDiagrams/EventSequence.png" alt="Event Sequence.png">
+                </div>
+            </div>
+
+            <div class="diagram-section">
+                <h2>Movement Sequence</h2>
+                <div class="diagram-container">
+                    <img src="assets/images/SequenceDiagrams/MovementSequence.png" alt="Movement Sequence.png">
+                </div>
+            </div>
+
+            <div class="diagram-section">
+                <h2>Play Event Sequence</h2>
+                <div class="diagram-container">
+                    <img src="assets/images/SequenceDiagrams/PlayerEventSequence.png" alt="Play Event Sequence.png">
+                </div>
+            </div>
+
+            <div class="diagram-section">
+                <h2>Player Event Sequence</h2>
+                <div class="diagram-container">
+                    <img src="assets/images/SequenceDiagrams/PlayerEventSequence.png" alt="Player Event Sequence.png">
+                </div>
+            </div>
+
+            <div class="diagram-section">
+                <h2>Screen Sequence</h2>
+                <div class="diagram-container">
+                    <img src="assets/images/SequenceDiagrams/ScreenSequence.png" alt="Screen Sequence.png">
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <section id="class-diagrams" class="section">
+        <div class="container">
+            <div class="diagram-section">
+                <h3>Phase one class diagram</h3>
+                <div class="diagram-container">
+                    <img src="assets/images/ClassDiagrams/ClassV1.png" alt="Phase I.png">
+                </div>
+            </div>
+
+            <div class="diagram-section">
+                <h3>Phase two class diagram</h3>
+                <div class="diagram-container">
+                    <img src="assets/images/ClassDiagrams/ClassV2.png" alt="Phase II.png">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="ecs" class="section">
+        <div class="container">
+            <div class="diagram-section">
+                <h1>ECS (Entity-Component-System)</h1>
+                <div class="diagram-container">
+                    <img src="assets/images/EntityComponentSystems/ECSv1.png" alt="ECS_v1.png">
+                </div>
+            </div>
+        </div>
+
     </section>
 
 </main>

@@ -1,15 +1,4 @@
 
-<!--<a href="https://docs.google.com/document/d/1uSEUkTx7TwjhC9__4GRph_KiIIABtbI6sEMNmyF-NJw/edit?usp=sharing">risk assessment</a>-->
-
-<!--<a href="https://docs.google.com/document/d/1bZVPHokvEOHiyHhP0aKFZpqKdLopFgCRzoTackHuUzQ/edit?usp=sharing">Architecture</a>-->
-
-<!--<a href="https://docs.google.com/document/d/1oThx34QZ7k7ykyu3dpDQm_c8Oz8JjbUf8P1NA73_sao/edit?usp=sharing">Implementation  </a>-->
-
-<!--<a href="https://docs.google.com/document/d/1UE9rLKW1BYWGNhiBdfwcW9eboLEKlev7v0U4jK-RM5k/edit?usp=sharing">Plan  </a>-->
-
-<!--<a href="https://docs.google.com/document/d/1J2HJH6q8h4ShFtYeZ115hOiWoiFYaPxJlq8AicnCf-A/edit?usp=sharing">requirements  </a>-->
-
-<!--<a href="https://github.com/Team-6-ENG/Escape_Uni"> Version control repository  </a>-->
 
 
 <!DOCTYPE html>
@@ -28,7 +17,6 @@
         <nav class="nav">
             <a href="#overview">Overview</a>
             <a href="#features">Features</a>
-<!--            <a href="#team">Our Team</a>-->
             <a href="#documents">Project Docs</a>
             <div class="dropdown">
                 <a href="#architecture-design" class="dropbtn">Architecture Design </a>
@@ -44,6 +32,10 @@
 <main class="main">
     <section id="documents" class="section">
         <div class="container">
+            <div class="doc-item">
+                    <span class="doc-title">Play the game</span>
+                    <a href="game/dist/index.html" class="doc-link"target="_blank">PLAY</a>
+                </div>
             <h2>Project Docs</h2>
             <div class="documents-list">
                 <div class="doc-item">
@@ -84,49 +76,36 @@
     <section id="overview" class="section">
         <div class="container">
             <h2> Introduction </h2>
-            <p><b>Escape from Uni</b> is a 2D campus-themed adventure game built in <b>Java</b> using the <b>LibGDX</b> framework. In this game, the player takes on the role of a university student who suddenly “respawns” at night, randomly appearing somewhere on campus as if refreshed like an NPC. The goal is clear yet challenging — within <b>five minutes</b>.
-                Will the player make it in time to catch the last bus and escape the campus?</p>
-            <h2>️ Objective </h2>
+            <p><b>Escape from Uni</b> is a 2D campus-themed adventure game built in <b>Java</b> using the <b>LibGDX</b> framework. In this game, the player is a university student and the goal is to catch the bus and escape campus within <b>five minutes</b>.<br><br></p>
+            <h2>️Objective </h2>
             <p>To successfully escape, the player must complete the following tasks before time runs out:</p>
             <ul>
                 <li>Go to <b>Ron Cooke Hub</b> to retrieve the <b>key card</b>.</li>
-                <li>Travel through <b>Langwith College</b> while avoiding obstacles.</li>
+                <li>Travel back to <b>Langwith College</b>.</li>
                 <li>Find the <b>bus</b> waiting on the road outside the university and escape before it departs.</li>
             </ul>
-            <h2> Technical Design </h2>
-            <p>The game uses a <b>multi-screen architecture</b> that separates different environments, each with
-                unique layouts and challenges. The project follows <b>object-oriented design</b> principles and includes
-                specialized manager classes to handle different aspects of gameplay:</p>
+            <h2>Technical Design </h2>
+            <p>The game uses a <b>multi-screen architecture</b> that separates different environments. The project follows <b>object-oriented design</b> principles and includes
+                specialized manager classes to handle different aspects of gameplay, for example:</p>
             <ul>
                 <li><b>BuildingManager:</b> Controls environment structures and collision detection.</li>
                 <li><b>AudioManager:</b> Manages background music and sound effects.</li>
                 <li><b>Lighting:</b> Creates dynamic light and shadow effects for nighttime gameplay.</li>
             </ul>
-            <h2> Core Gameplay </h2>
-            <p>The game’s <b>Goose</b> character features <b>dynamic behavior patterns</b> including stealing, chasing,
-                and resting. Players must think strategically, collect items, and survive the night while
-                racing against the clock to reach the bus.</p>
-
-            <h2> Highlights </h2>
-            <ul>
-                <li>Multiple interconnected scenes with distinct visuals and interactions.</li>
-                <li>Immersive lighting effects and ambient sound design.</li>
-                <li><b>Sprite animations</b> for fluid gameplay.</li>
-                <li><b>Modular codebase</b> following best practices for game development in Java.</li>
             </ul>
         </div>
     </section>
     <section id="features" class="section">
         <div class="container">
-            <h2>Features</h2>
+            <h2>Classes</h2>
             <p>We used CRC (Class–Responsibility–Collaboration) cards to model the game’s object-oriented structure.</p>
 
             <div class="crc-grid">
                 <div class="crc-card">
                     <h3>Main</h3>
-                    <p><strong>Responsibilities:</strong>
-                        - Start the game
-                        - Create main Screen instances
+                    <p><strong>Responsibilities:<br></strong>
+                        - Start the game<br>
+                        - Create main Screen instances<br>
                         - Initialize global resources (sound effects, fonts, etc.)</p>
                     <p><strong>Collaborators:</strong> GameScreen, AudioManager </p>
                 </div>
@@ -136,7 +115,7 @@
                     <p><strong>Responsibilities:</strong>
                         - Manage the main game loop
                         - Render the map
-                        - Update player and enemy states
+                        - Update player and item states
                         - Detect collisions</p>
                     <p><strong>Collaborators:</strong> Player, Goose, BuildingManager, Collectable, Lighting </p>
                 </div>
@@ -178,63 +157,7 @@
             </div>
         </div>
     </section>
-    <section id="team" class="section">
-        <div class="container">
-            <h2>👥 Our Team</h2>
-            <p class="team-subtitle">Meet the developers behind Escape from Uni</p>
-
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="member-avatar">💻</div>
-                    <h3>Braithwaite, Max</h3>
-                    <p class="member-role"></p>
-                    <p class="member-bio"></p>
-                </div>
-
-                <div class="team-member">
-                    <div class="member-avatar">📊</div>
-                    <h3>Faruque, Amber</h3>
-                    <p class="member-role"></p>
-                    <p class="member-bio"></p>
-                </div>
-
-                <div class="team-member">
-                    <div class="member-avatar">💻</div>
-                    <h3>Fu, Zhuoran</h3>
-                    <p class="member-role"></p>
-                    <p class="member-bio"></p>
-                </div>
-
-                <div class="team-member">
-                    <div class="member-avatar">🎵</div>
-                    <h3>Kocaman, Melike</h3>
-                    <p class="member-role"></p>
-                    <p class="member-bio"></p>
-                </div>
-
-                <div class="team-member">
-                    <div class="member-avatar">🎨</div>
-                    <h3>McDermott, John</h3>
-                    <p class="member-role"></p>
-                    <p class="member-bio"></p>
-                </div>
-
-                <div class="team-member">
-                    <div class="member-avatar">🔧</div>
-                    <h3>Rissen, James</h3>
-                    <p class="member-role"></p>
-                    <p class="member-bio"></p>
-                </div>
-
-                <div class="team-member">
-                    <div class="member-avatar">💻</div>
-                    <h3>Scott, Charlotte</h3>
-                    <p class="member-role"></p>
-                    <p class="member-bio"></p>
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <section id="sequence-diagrams" class="section">
         <div class="container">
             <div class="diagram-section">

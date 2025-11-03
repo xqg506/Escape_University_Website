@@ -17,21 +17,25 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
-
-header {
+#head{
+    
     position: sticky;
     top: 0;
     z-index: 10;
+}
+header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     padding: 1rem 0;
     text-align: center;
-    border-bottom: 3px solid #ffb84d;
     display: block;
 }
 
 .nav {
     margin-top: 0.5rem;
+    background: rgba(26, 26, 46,1);
+    margin-top: 0;
+    border-bottom: 3px solid #ffb84d;
 }
 
 .nav a {

@@ -16,20 +16,45 @@
         <p class="subtitle">ENG1 Project - Cohort 4 Team 6</p>
         <nav class="nav">
             <a href="#overview">Overview</a>
-            <a href="#features">Features</a>
             <a href="#documents">Project Docs</a>
             <div class="dropdown">
                 <a href="#architecture-design" class="dropbtn">Architecture Design </a>
                 <div class="dropdown-content">
+                    <a href = "#crc">CRC cards</a>
                     <a href="#sequence-diagrams">Sequence Diagrams</a>
                     <a href="#class-diagrams">Class Diagrams</a>
                     <a href="#ecs">Entity-Component-System</a>
                 </div>
             </div>
+            <a href = "#attributions">Attributions</a>
         </nav>
     </div>
 </header>
 <main class="main">
+    
+    <section id="overview" class="section">
+        <div class="container">
+            <h2> Introduction </h2>
+            <p><b>Escape from Uni</b> is a 2D campus-themed adventure game built in <b>Java</b> using the <b>LibGDX</b> framework. In this game, the player is a university student and the goal is to catch the bus and escape campus within <b>five minutes</b>.<br><br></p>
+            <h2>️Objective </h2>
+            <p>To successfully escape, the player must complete the following tasks before time runs out:</p>
+            <ul>
+                <li>Go to <b>Ron Cooke Hub</b> to retrieve the <b>key card</b>.</li>
+                <li>Travel back to <b>Langwith College</b> to collect the phone.</li>
+                <li>Find the <b>bus</b> waiting outside the university and escape before it departs.</li>
+            </ul>
+            <h2>Technical Design </h2>
+            <p>The game uses a <b>multi-screen architecture</b> that separates different environments. The project follows <b>object-oriented design</b> principles and includes
+                specialized manager classes to handle different aspects of gameplay, for example:</p>
+            <ul>
+                <li><b>BuildingManager:</b> Controls environment structures and collision detection.</li>
+                <li><b>AudioManager:</b> Manages background music and sound effects.</li>
+                <li><b>Lighting:</b> Creates dynamic light and shadow effects for nighttime gameplay.</li>
+            </ul>
+            </ul>
+        </div>
+    </section>
+   
     <section id="documents" class="section">
         <div class="container">
             <div class="doc-item">
@@ -72,30 +97,7 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section id="overview" class="section">
-        <div class="container">
-            <h2> Introduction </h2>
-            <p><b>Escape from Uni</b> is a 2D campus-themed adventure game built in <b>Java</b> using the <b>LibGDX</b> framework. In this game, the player is a university student and the goal is to catch the bus and escape campus within <b>five minutes</b>.<br><br></p>
-            <h2>️Objective </h2>
-            <p>To successfully escape, the player must complete the following tasks before time runs out:</p>
-            <ul>
-                <li>Go to <b>Ron Cooke Hub</b> to retrieve the <b>key card</b>.</li>
-                <li>Travel back to <b>Langwith College</b>.</li>
-                <li>Find the <b>bus</b> waiting on the road outside the university and escape before it departs.</li>
-            </ul>
-            <h2>Technical Design </h2>
-            <p>The game uses a <b>multi-screen architecture</b> that separates different environments. The project follows <b>object-oriented design</b> principles and includes
-                specialized manager classes to handle different aspects of gameplay, for example:</p>
-            <ul>
-                <li><b>BuildingManager:</b> Controls environment structures and collision detection.</li>
-                <li><b>AudioManager:</b> Manages background music and sound effects.</li>
-                <li><b>Lighting:</b> Creates dynamic light and shadow effects for nighttime gameplay.</li>
-            </ul>
-            </ul>
-        </div>
-    </section>
-    <section id="features" class="section">
+    </section> <section id="crc" class="section">
         <div class="container">
             <h2>Classes</h2>
             <p>We used CRC (Class–Responsibility–Collaboration) cards to model the game’s object-oriented structure.</p>
@@ -157,39 +159,39 @@
             </div>
         </div>
     </section>
-    
     <section id="sequence-diagrams" class="section">
         <div class="container">
+            <h2>Sequence Diagrams</h2>
             <div class="diagram-section">
-                <h2>Event Sequence</h2>
+                <h3>Event Sequence</h3>
                 <div class="diagram-container">
                     <img src="assets/images/SequenceDiagrams/EventSequence.png" alt="Event Sequence.png">
                 </div>
             </div>
 
             <div class="diagram-section">
-                <h2>Movement Sequence</h2>
+                <h3>Movement Sequence</h3>
                 <div class="diagram-container">
                     <img src="assets/images/SequenceDiagrams/MovementSequence.png" alt="Movement Sequence.png">
                 </div>
             </div>
 
             <div class="diagram-section">
-                <h2>Play Event Sequence</h2>
+                <h3>Play Event Sequence</h3>
                 <div class="diagram-container">
-                    <img src="assets/images/SequenceDiagrams/PlayerEventSequence.png" alt="Play Event Sequence.png">
+                    <img src="assets/images/SequenceDiagrams/PlaySequence.png" alt="Play Event Sequence.png">
                 </div>
             </div>
 
             <div class="diagram-section">
-                <h2>Player Event Sequence</h2>
+                <h3>Player Event Sequence</h3>
                 <div class="diagram-container">
                     <img src="assets/images/SequenceDiagrams/PlayerEventSequence.png" alt="Player Event Sequence.png">
                 </div>
             </div>
 
             <div class="diagram-section">
-                <h2>Screen Sequence</h2>
+                <h3>Screen Sequence</h3>
                 <div class="diagram-container">
                     <img src="assets/images/SequenceDiagrams/ScreenSequence.png" alt="Screen Sequence.png">
                 </div>
@@ -201,6 +203,7 @@
     </section>
     <section id="class-diagrams" class="section">
         <div class="container">
+            <h2>Class Diagrams</h2>
             <div class="diagram-section">
                 <h3>Phase one class diagram</h3>
                 <div class="diagram-container">
@@ -220,7 +223,7 @@
     <section id="ecs" class="section">
         <div class="container">
             <div class="diagram-section">
-                <h1>ECS (Entity-Component-System)</h1>
+                <h2>ECS (Entity-Component-System)</h2>
                 <div class="diagram-container">
                     <img src="assets/images/EntityComponentSystems/ECSv1.png" alt="ECS_v1.png">
                 </div>
@@ -229,6 +232,27 @@
 
     </section>
 
+    <section id="attributions" class="section">
+        <div class = "container">
+            
+            <h2> Attributions </h2>
+            <p><br></p>
+            <p>Seed packet icon by Freepik – <a href="https://www.flaticon.com/free-icon/packet_4769213"><u>https://www.flaticon.com/free-icon/packet_4769213</u></a></p>
+            <p>Available on <a href="http://flaticon.com"><u>Flaticon.com</u></a></p>
+            <p><br></p>
+            <p>Lil’ Scientist by Smithy Games - <a href="https://smithygames.itch.io/bouncy-scientist"><u>https://smithygames.itch.io/bouncy-scientist</u></a></p>
+            <p>Available on <a href="http://itch.io"><u>Itch.io</u></a></p>
+            <p><br></p>
+            <p>Bus by Max.Icons - <a href="https://www.flaticon.com/free-icon/bus_2706806"><u>https://www.flaticon.com/free-icon/bus_2706806</u></a></p>
+            <p>Available on <a href="http://flaticon.com"><u>Flaticon.com</u></a></p>
+            <p><br></p>
+            <p>Goose HONK! Sound - <a href="https://quicksounds.com/sound/22715/"><u>https://quicksounds.com/sound/22715/</u></a></p>
+            <p>Available on <a href="http://quicksounds.com"><u>quicksounds.com</u></a></p>
+            <p><br></p>
+            <p>Smartphone icon by Special Flat - <a href="https://www.freepik.com/icon/smartphone_2482945"><u>https://www.freepik.com/icon/smartphone_2482945</u></a></p>
+            <p>Available on <a href="http://flaticon.com"><u>Flaticon.com</u></a></p>
+        </div>
+    </section>
 </main>
 
 <footer class="footer">

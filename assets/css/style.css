@@ -18,16 +18,18 @@ body {
     padding: 0 20px;
 }
 
-.header {
+header {
+    position: sticky;
+    top: 0;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    padding: 2rem 0;
+    padding: 1rem 0;
     text-align: center;
     border-bottom: 3px solid #ffb84d;
 }
 
 .nav {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 .nav a {
@@ -72,7 +74,6 @@ body {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
     transition: all 0.3s;
     color: #e8e6e3;
 }
@@ -128,7 +129,6 @@ body {
     padding: 1.5rem;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     transition: all 0.3s;
-    backdrop-filter: blur(10px);
     color: #e8e6e3;
 }
 
@@ -138,23 +138,17 @@ body {
     border-color: rgba(255, 255, 255, 0.3);
 }
 
-.crc-card h3 {
-    color: #ffb84d;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid rgba(255, 184, 77, 0.3);
-}
 
 .crc-card p {
     margin-bottom: 0.8rem;
     line-height: 1.5;
+
 }
 
 .crc-card strong {
     color: #ffb84d;
 }
 
-/* CRC Cards 颜色 - 深色主题优化 */
 .crc-card:nth-child(1) {
     border-top: 4px solid #4CAF50;
     box-shadow: 0 8px 32px rgba(76, 175, 80, 0.1);
@@ -202,7 +196,6 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     transition: all 0.3s;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
 }
 
 .doc-item:hover {
@@ -236,18 +229,23 @@ body {
 }
 
 /* Overview */
-#overview h2, #features h2, #documents h2, #sequence-diagrams h2, #class-diagrams h2, #ecs h2, #ecs h1 {
+h2{
     color: #ffb84d;
     text-align: left;
     margin-bottom: 1rem;
     font-size: 1.8rem;
 }
 
-#overview h3 {
+h3 {
     color: #ffb84d;
     margin: 1rem 0 0.5rem 0;
-    border-left: 3px solid #ffb84d;
-    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(255, 184, 77, 0.3);
+    font-size: 1.3rem;
+    display: inline-block;
+}
+.crc-card h3{
+    width:100%;
 }
 
 #overview ul {
@@ -282,7 +280,6 @@ body {
     }
 }
 
-/* 下拉菜单样式 */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -296,7 +293,6 @@ body {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(255, 184, 77, 0.3);
     border-radius: 8px;
-    backdrop-filter: blur(10px);
     z-index: 1000;
     top: 100%;
     left: 0;
@@ -336,24 +332,15 @@ body {
 }
 
 
-/* Sequence Diagrams 样式 */
+/* Sequence Diagrams*/
 .diagram-section {
     margin-bottom: 3rem;
     text-align: center;
 }
 
-.diagram-section h3 {
-    color: #ffb84d;
-    margin-bottom: 1.5rem;
-    font-size: 1.3rem;
-    border-bottom: 2px solid rgba(255, 184, 77, 0.3);
-    padding-bottom: 0.5rem;
-    display: inline-block;
-}
 
 .diagram-container {
-    width: fit-content;
-    max-width: 100%;
+    width: 90%;
     height: auto;
     margin: 0 auto;
     padding: 1rem;
@@ -379,13 +366,18 @@ body {
     display: block;
     transition: transform 0.3s;
     border-radius: 8px;
+    margin:0px;
 }
 
 .diagram-container:hover img {
     transform: scale(1.02);
 }
 
-/* 响应式调整 */
+a{
+    color: #ffb84d;
+}
+
+
 @media (max-width: 768px) {
     .diagram-container {
         padding: 0.8rem;

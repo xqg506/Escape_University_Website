@@ -17,12 +17,14 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
-#head{
-    
+
+#head {
+
     position: sticky;
     top: 0;
     z-index: 10;
 }
+
 header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -33,7 +35,7 @@ header {
 
 .nav {
     margin-top: 0.5rem;
-    background: rgba(26, 26, 46,1);
+    background: rgba(26, 26, 46, 1);
     margin-top: 0;
     border-bottom: 3px solid #ffb84d;
 }
@@ -47,10 +49,12 @@ header {
     transition: all 0.3s;
     border: 1px solid transparent;
 }
-#active{
-    
+
+#active {
+
     background-color: rgba(255, 255, 255, 0.1);
 }
+
 .nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid #ffb84d;
@@ -69,14 +73,16 @@ header {
     background-color: rgba(22, 33, 62, 0.8);
 }
 
-.features-grid, .team-grid {
+.features-grid,
+.team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
 
-.feature-card, .team-member {
+.feature-card,
+.team-member {
     background: rgba(255, 255, 255, 0.1);
     padding: 2rem;
     border-radius: 10px;
@@ -87,7 +93,8 @@ header {
     color: #e8e6e3;
 }
 
-.feature-card:hover, .team-member:hover {
+.feature-card:hover,
+.team-member:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 40px rgba(255, 184, 77, 0.2);
     border-color: #ffb84d;
@@ -238,7 +245,7 @@ header {
 }
 
 /* Overview */
-h2{
+h2 {
     color: #ffb84d;
     text-align: left;
     margin-bottom: 1rem;
@@ -253,8 +260,9 @@ h3 {
     font-size: 1.3rem;
     display: inline-block;
 }
-.crc-card h3{
-    width:100%;
+
+.crc-card h3 {
+    width: 100%;
 }
 
 #overview ul {
@@ -375,14 +383,14 @@ h3 {
     display: block;
     transition: transform 0.3s;
     border-radius: 8px;
-    margin:0px;
+    margin: 0px;
 }
 
 .diagram-container:hover img {
     transform: scale(1.02);
 }
 
-a{
+a {
     color: #ffb84d;
 }
 

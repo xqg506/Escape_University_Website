@@ -1,79 +1,82 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENG1 Project - Cohort 4 Team 6</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <div id = "head">
-<header class="header">
-    <div class="container">
-        <h1>Escape from Uni</h1>
-        <p class="subtitle">ENG1 Project - Cohort 4 Team 6</p>
-        
+    <div id="head">
+        <header class="header">
+            <div class="container">
+                <h1>Escape from Uni</h1>
+                <p class="subtitle">ENG1 Project - Cohort 4 Team 6</p>
+
+            </div>
+        </header>
+
+        <header class="nav">
+
+            <div class=container>
+                <nav>
+                    <a id="active" href="index.html">Overview</a>
+                    <a href="files.html">Project Docs</a>
+                    <div class="dropdown">
+                        <a href="" class="dropbtn">Architecture Design </a>
+                        <div class="dropdown-content">
+                            <a href="crc.html">CRC cards</a>
+                            <a href="sequence-diagrams.html">Sequence Diagrams</a>
+                            <a href="class-diagrams.html">Class Diagrams</a>
+                            <a href="ecs.html">Entity-Component-System</a>
+                        </div>
+                    </div>
+                    <a href="attributions.html">Attributions</a>
+                </nav>
+
+            </div>
+        </header>
     </div>
-</header>
-
-<header class = "nav">
-
-    <div class = container>
-        <nav >
-            <a id = "active" href="index.html">Overview</a>
-            <a href="files.html">Project Docs</a>
-            <div class="dropdown">
-                <a href="" class="dropbtn">Architecture Design </a>
-                <div class="dropdown-content">
-                    <a href = "crc.html">CRC cards</a>
-                    <a href="sequence-diagrams.html">Sequence Diagrams</a>
-                    <a href="class-diagrams.html">Class Diagrams</a>
-                    <a href="ecs.html">Entity-Component-System</a>
+    <main>
+        <section id="overview" class="section">
+            <div class="container">
+                <div class="doc-item">
+                    <span class="doc-title">Play the game</span>
+                    <a href="game/dist/index.html" class="doc-link" target="_blank">PLAY</a>
                 </div>
+                <h2> Introduction </h2>
+                <p><b>Escape from Uni</b> is a 2D campus-themed adventure game built in <b>Java</b> using the
+                    <b>LibGDX</b> framework. In this game, the player is a university student and the goal is to catch
+                    the bus and escape campus within <b>five minutes</b>.<br><br></p>
+                <h2>️Objective </h2>
+                <p>To successfully escape, the player must complete the following tasks before time runs out:</p>
+                <ul>
+                    <li>Go to <b>Ron Cooke Hub</b> to retrieve the <b>key card</b>.</li>
+                    <li>Travel back to <b>Langwith College</b> to collect the phone.</li>
+                    <li>Find the <b>bus</b> waiting outside the university and escape before it departs.</li>
+                </ul>
+                <h2>Technical Design </h2>
+                <p>The game uses a <b>multi-screen architecture</b> that separates different environments. The project
+                    follows <b>object-oriented design</b> principles and includes
+                    specialized manager classes to handle different aspects of gameplay, for example:</p>
+                <ul>
+                    <li><b>BuildingManager:</b> Controls environment structures and collision detection.</li>
+                    <li><b>AudioManager:</b> Manages background music and sound effects.</li>
+                    <li><b>Lighting:</b> Creates dynamic light and shadow effects for nighttime gameplay.</li>
+                </ul>
+                </ul>
             </div>
-            <a href = "attributions.html">Attributions</a>
-        </nav>
+        </section>
 
-    </div>
-</header>
-</div>
-<main>
-    <section id="overview" class="section">
+    </main>
+
+    <footer class="footer">
         <div class="container">
-            <div class="doc-item">
-                <span class="doc-title">Play the game</span>
-                <a href="game/dist/index.html" class="doc-link"target="_blank">PLAY</a>
-            </div>
-            <h2> Introduction </h2>
-            <p><b>Escape from Uni</b> is a 2D campus-themed adventure game built in <b>Java</b> using the <b>LibGDX</b> framework. In this game, the player is a university student and the goal is to catch the bus and escape campus within <b>five minutes</b>.<br><br></p>
-            <h2>️Objective </h2>
-            <p>To successfully escape, the player must complete the following tasks before time runs out:</p>
-            <ul>
-                <li>Go to <b>Ron Cooke Hub</b> to retrieve the <b>key card</b>.</li>
-                <li>Travel back to <b>Langwith College</b> to collect the phone.</li>
-                <li>Find the <b>bus</b> waiting outside the university and escape before it departs.</li>
-            </ul>
-            <h2>Technical Design </h2>
-            <p>The game uses a <b>multi-screen architecture</b> that separates different environments. The project follows <b>object-oriented design</b> principles and includes
-                specialized manager classes to handle different aspects of gameplay, for example:</p>
-            <ul>
-                <li><b>BuildingManager:</b> Controls environment structures and collision detection.</li>
-                <li><b>AudioManager:</b> Manages background music and sound effects.</li>
-                <li><b>Lighting:</b> Creates dynamic light and shadow effects for nighttime gameplay.</li>
-            </ul>
-            </ul>
+            <p>&copy; 2025 Cohort 4 Team 6 - University of York</p>
         </div>
-    </section>
-
-</main>
-
-<footer class="footer">
-    <div class="container">
-        <p>&copy; 2025 Cohort 4 Team 6 - University of York</p>
-    </div>
-</footer>
+    </footer>
 </body>
+
 </html>

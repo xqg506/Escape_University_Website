@@ -1,94 +1,95 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENG1 Project - Cohort 4 Team 6</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <div id = "head">
-<header class="header">
-    <div class="container">
-        <h1>Escape from Uni</h1>
-        <p class="subtitle">ENG1 Project - Cohort 4 Team 6</p>
-        
+    <div id="head">
+        <header class="header">
+            <div class="container">
+                <h1>Escape from Uni</h1>
+                <p class="subtitle">ENG1 Project - Cohort 4 Team 6</p>
+
+            </div>
+        </header>
+        <header class="nav">
+
+            <div class=container>
+                <nav>
+                    <a href="index.html">Overview</a>
+                    <a href="files.html">Project Docs</a>
+                    <div class="dropdown">
+                        <a id="active" href="#architecture-design" class="dropbtn">Architecture Design </a>
+                        <div class="dropdown-content">
+                            <a href="crc.html">CRC cards</a>
+                            <a id="active" href="sequence-diagrams.html">Sequence Diagrams</a>
+                            <a href="class-diagrams.html">Class Diagrams</a>
+                            <a href="ecs.html">Entity-Component-System</a>
+                        </div>
+                    </div>
+                    <a href="attributions.html">Attributions</a>
+                </nav>
+
+            </div>
+        </header>
     </div>
-</header>
-<header class = "nav">
+    <main>
 
-    <div class = container>
-        <nav >
-            <a href="index.html">Overview</a>
-            <a href="files.html">Project Docs</a>
-            <div class="dropdown">
-                <a id = "active" href="#architecture-design" class="dropbtn">Architecture Design </a>
-                <div class="dropdown-content">
-                    <a href = "crc.html">CRC cards</a>
-                    <a id = "active" href="sequence-diagrams.html">Sequence Diagrams</a>
-                    <a href="class-diagrams.html">Class Diagrams</a>
-                    <a href="ecs.html">Entity-Component-System</a>
+        <section id="sequence-diagrams" class="section">
+            <div class="container">
+                <h2>Sequence Diagrams</h2>
+                <div class="diagram-section">
+                    <h3>Event Sequence</h3>
+                    <div class="diagram-container">
+                        <img src="assets/images/SequenceDiagrams/EventSequence.png" alt="Event Sequence.png">
+                    </div>
                 </div>
-            </div>
-            <a href = "attributions.html">Attributions</a>
-        </nav>
 
-    </div>
-</header>
-</div>
-<main>
-
-    <section id="sequence-diagrams" class="section">
-        <div class="container">
-            <h2>Sequence Diagrams</h2>
-            <div class="diagram-section">
-                <h3>Event Sequence</h3>
-                <div class="diagram-container">
-                    <img src="assets/images/SequenceDiagrams/EventSequence.png" alt="Event Sequence.png">
+                <div class="diagram-section">
+                    <h3>Movement Sequence</h3>
+                    <div class="diagram-container">
+                        <img src="assets/images/SequenceDiagrams/MovementSequence.png" alt="Movement Sequence.png">
+                    </div>
                 </div>
-            </div>
 
-            <div class="diagram-section">
-                <h3>Movement Sequence</h3>
-                <div class="diagram-container">
-                    <img src="assets/images/SequenceDiagrams/MovementSequence.png" alt="Movement Sequence.png">
+                <div class="diagram-section">
+                    <h3>Play Event Sequence</h3>
+                    <div class="diagram-container">
+                        <img src="assets/images/SequenceDiagrams/PlaySequence.png" alt="Play Event Sequence.png">
+                    </div>
                 </div>
-            </div>
 
-            <div class="diagram-section">
-                <h3>Play Event Sequence</h3>
-                <div class="diagram-container">
-                    <img src="assets/images/SequenceDiagrams/PlaySequence.png" alt="Play Event Sequence.png">
+                <div class="diagram-section">
+                    <h3>Player Event Sequence</h3>
+                    <div class="diagram-container">
+                        <img src="assets/images/SequenceDiagrams/PlayerEventSequence.png"
+                            alt="Player Event Sequence.png">
+                    </div>
                 </div>
+
+                <div class="diagram-section">
+                    <h3>Screen Sequence</h3>
+                    <div class="diagram-container">
+                        <img src="assets/images/SequenceDiagrams/ScreenSequence.png" alt="Screen Sequence.png">
+                    </div>
+                </div>
+
+
             </div>
 
-            <div class="diagram-section">
-                <h3>Player Event Sequence</h3>
-                <div class="diagram-container">
-                    <img src="assets/images/SequenceDiagrams/PlayerEventSequence.png" alt="Player Event Sequence.png">
-                </div>
-            </div>
-
-            <div class="diagram-section">
-                <h3>Screen Sequence</h3>
-                <div class="diagram-container">
-                    <img src="assets/images/SequenceDiagrams/ScreenSequence.png" alt="Screen Sequence.png">
-                </div>
-            </div>
-
-
-        </div>
-
-    </section>
+        </section>
     </main>
-    
-<footer class="footer">
-    <div class="container">
-        <p>&copy; 2025 Cohort 4 Team 6 - University of York</p>
-    </div>
-</footer>
-    </body>
-    </html>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Cohort 4 Team 6 - University of York</p>
+        </div>
+    </footer>
+</body>
+
+</html>

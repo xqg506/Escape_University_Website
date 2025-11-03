@@ -21,11 +21,13 @@ body {
 header {
     position: sticky;
     top: 0;
+    z-index: 10;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     padding: 1rem 0;
     text-align: center;
     border-bottom: 3px solid #ffb84d;
+    display: block;
 }
 
 .nav {
@@ -41,7 +43,10 @@ header {
     transition: all 0.3s;
     border: 1px solid transparent;
 }
-
+#active{
+    
+    background-color: rgba(255, 255, 255, 0.1);
+}
 .nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid #ffb84d;

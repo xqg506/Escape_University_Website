@@ -15,25 +15,28 @@
         <h1>Escape from Uni</h1>
         <p class="subtitle">ENG1 Project - Cohort 4 Team 6</p>
         <nav class="nav">
-            <a href="#overview">Overview</a>
-            <a href="#documents">Project Docs</a>
+            <a id = "active" href="index.html">Overview</a>
+            <a href="files.html">Project Docs</a>
             <div class="dropdown">
                 <a href="#architecture-design" class="dropbtn">Architecture Design </a>
                 <div class="dropdown-content">
-                    <a href = "#crc">CRC cards</a>
-                    <a href="#sequence-diagrams">Sequence Diagrams</a>
-                    <a href="#class-diagrams">Class Diagrams</a>
-                    <a href="#ecs">Entity-Component-System</a>
+                    <a href = "crc.html">CRC cards</a>
+                    <a href="sequence-diagrams.html">Sequence Diagrams</a>
+                    <a href="class-diagrams.html">Class Diagrams</a>
+                    <a href="ecs.html">Entity-Component-System</a>
                 </div>
             </div>
-            <a href = "#attributions">Attributions</a>
+            <a href = "attributions.html">Attributions</a>
         </nav>
     </div>
 </header>
-<main class="main">
-    
+<main>
     <section id="overview" class="section">
         <div class="container">
+            <div class="doc-item">
+                <span class="doc-title">Play the game</span>
+                <a href="game/dist/index.html" class="doc-link"target="_blank">PLAY</a>
+            </div>
             <h2> Introduction </h2>
             <p><b>Escape from Uni</b> is a 2D campus-themed adventure game built in <b>Java</b> using the <b>LibGDX</b> framework. In this game, the player is a university student and the goal is to catch the bus and escape campus within <b>five minutes</b>.<br><br></p>
             <h2>️Objective </h2>
@@ -54,205 +57,7 @@
             </ul>
         </div>
     </section>
-   
-    <section id="documents" class="section">
-        <div class="container">
-            <div class="doc-item">
-                    <span class="doc-title">Play the game</span>
-                    <a href="game/dist/index.html" class="doc-link"target="_blank">PLAY</a>
-                </div>
-            <h2>Project Docs</h2>
-            <div class="documents-list">
-                <div class="doc-item">
-                    <span class="doc-title">Requirements</span>
-                    <a href="https://docs.google.com/document/d/1J2HJH6q8h4ShFtYeZ115hOiWoiFYaPxJlq8AicnCf-A/edit?usp=sharing" class="doc-link">Requirements Document</a>
-                </div>
-                <div class="doc-item">
-                    <span class="doc-title">Architecture</span>
-                    <a href="https://docs.google.com/document/d/1bZVPHokvEOHiyHhP0aKFZpqKdLopFgCRzoTackHuUzQ/edit?usp=sharing" class="doc-link">Architecture Document</a>
-                </div>
-                <div class="doc-item">
-                    <span class="doc-title">Risk Assessment</span>
-                    <a href="https://docs.google.com/document/d/1uSEUkTx7TwjhC9__4GRph_KiIIABtbI6sEMNmyF-NJw/edit?usp=sharing" class="doc-link">Risk Assessment Document</a>
-                </div>
-                <div class="doc-item">
-                    <span class="doc-title">Method</span>
-                    <a href="https://docs.google.com/document/d/1UE9rLKW1BYWGNhiBdfwcW9eboLEKlev7v0U4jK-RM5k/edit?usp=sharing" class="doc-link">Method Selection & Planning Document</a>
-                </div>
-                <div class="doc-item">
-                    <span class="doc-title">Implementation</span>
-                    <a href="https://docs.google.com/document/d/1oThx34QZ7k7ykyu3dpDQm_c8Oz8JjbUf8P1NA73_sao/edit?usp=sharing" class="doc-link">Implementation Document</a>
-                </div>
-                <div class="doc-item">
-                    <span class="doc-title">Executables</span>
-                    <a href="" class="doc-link">Game</a>
-                </div>
-                <div class="doc-item">
-                    <span class="doc-title">Version Control</span>
-                    <a href="https://github.com/Team-6-ENG/Escape_Uni" class="doc-link">View on GitHub</a>
-                </div>
-                <div class="doc-item">
-                    <span class="doc-title">Java Doc</span>
-                    <a href="https://docs.oracle.com/en/java/javase/17/docs/api/" class="doc-link">Java 17 Document</a>
-                </div>
-            </div>
-        </div>
-    </section> <section id="crc" class="section">
-        <div class="container">
-            <h2>Classes</h2>
-            <p>We used CRC (Class–Responsibility–Collaboration) cards to model the game’s object-oriented structure.</p>
 
-            <div class="crc-grid">
-                <div class="crc-card">
-                    <h3>Main</h3>
-                    <p><strong>Responsibilities:<br></strong>
-                        - Start the game<br>
-                        - Create main Screen instances<br>
-                        - Initialize global resources (sound effects, fonts, etc.)</p>
-                    <p><strong>Collaborators:</strong> GameScreen, AudioManager </p>
-                </div>
-
-                <div class="crc-card">
-                    <h3>GameScreen</h3>
-                    <p><strong>Responsibilities:</strong>
-                        - Manage the main game loop
-                        - Render the map
-                        - Update player and item states
-                        - Detect collisions</p>
-                    <p><strong>Collaborators:</strong> Player, Goose, BuildingManager, Collectable, Lighting </p>
-                </div>
-
-                <div class="crc-card">
-                    <h3>Player</h3>
-                    <p><strong>Responsibilities:</strong>
-                        - Control player movement
-                        - Handle input processing
-                        - Collect items
-                        - Manage score</p>
-                    <p><strong>Collaborators:</strong> GameScreen, Goose, Collectable </p>
-                </div>
-
-                <div class="crc-card">
-                    <h3>Goose</h3>
-                    <p><strong>Responsibilities:</strong>
-                        - Enemy implementation
-                        - Torch stealing logic
-                        - Escape and chasing behavior</p>
-                    <p><strong>Collaborators:</strong> GameScreen, Player </p>
-                </div>
-
-                <div class="crc-card">
-                    <h3>BuildingManager</h3>
-                    <p><strong>Responsibilities:</strong>
-                        - Manage map buildings and obstacles
-                        - Provide collision detection</p>
-                    <p><strong>Collaborators:</strong> GameScreen, Player, Goose </p>
-                </div>
-
-                <div class="crc-card">
-                    <h3>Collectable</h3>
-                    <p><strong>Responsibilities:</strong>
-                        - Define collectible item properties
-                        - Implement interaction logic</p>
-                    <p><strong>Collaborators:</strong> GameScreen, Player </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="sequence-diagrams" class="section">
-        <div class="container">
-            <h2>Sequence Diagrams</h2>
-            <div class="diagram-section">
-                <h3>Event Sequence</h3>
-                <div class="diagram-container">
-                    <img src="assets/images/SequenceDiagrams/EventSequence.png" alt="Event Sequence.png">
-                </div>
-            </div>
-
-            <div class="diagram-section">
-                <h3>Movement Sequence</h3>
-                <div class="diagram-container">
-                    <img src="assets/images/SequenceDiagrams/MovementSequence.png" alt="Movement Sequence.png">
-                </div>
-            </div>
-
-            <div class="diagram-section">
-                <h3>Play Event Sequence</h3>
-                <div class="diagram-container">
-                    <img src="assets/images/SequenceDiagrams/PlaySequence.png" alt="Play Event Sequence.png">
-                </div>
-            </div>
-
-            <div class="diagram-section">
-                <h3>Player Event Sequence</h3>
-                <div class="diagram-container">
-                    <img src="assets/images/SequenceDiagrams/PlayerEventSequence.png" alt="Player Event Sequence.png">
-                </div>
-            </div>
-
-            <div class="diagram-section">
-                <h3>Screen Sequence</h3>
-                <div class="diagram-container">
-                    <img src="assets/images/SequenceDiagrams/ScreenSequence.png" alt="Screen Sequence.png">
-                </div>
-            </div>
-
-
-        </div>
-
-    </section>
-    <section id="class-diagrams" class="section">
-        <div class="container">
-            <h2>Class Diagrams</h2>
-            <div class="diagram-section">
-                <h3>Phase one class diagram</h3>
-                <div class="diagram-container">
-                    <img src="assets/images/ClassDiagrams/ClassV1.png" alt="Phase I.png">
-                </div>
-            </div>
-
-            <div class="diagram-section">
-                <h3>Phase two class diagram</h3>
-                <div class="diagram-container">
-                    <img src="assets/images/ClassDiagrams/ClassV2.png" alt="Phase II.png">
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <section id="ecs" class="section">
-        <div class="container">
-            <div class="diagram-section">
-                <h2>ECS (Entity-Component-System)</h2>
-                <div class="diagram-container">
-                    <img src="assets/images/EntityComponentSystems/ECSv1.png" alt="ECS_v1.png">
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="attributions" class="section">
-        <div class = "container">
-            
-            <h2> Attributions </h2>
-            <p><br></p>
-            <p>Seed packet icon by Freepik – <a href="https://www.flaticon.com/free-icon/packet_4769213"><u>https://www.flaticon.com/free-icon/packet_4769213</u></a></p>
-            <p>Available on <a href="http://flaticon.com"><u>Flaticon.com</u></a></p>
-            <p><br></p>
-            <p>Lil’ Scientist by Smithy Games - <a href="https://smithygames.itch.io/bouncy-scientist"><u>https://smithygames.itch.io/bouncy-scientist</u></a></p>
-            <p>Available on <a href="http://itch.io"><u>Itch.io</u></a></p>
-            <p><br></p>
-            <p>Bus by Max.Icons - <a href="https://www.flaticon.com/free-icon/bus_2706806"><u>https://www.flaticon.com/free-icon/bus_2706806</u></a></p>
-            <p>Available on <a href="http://flaticon.com"><u>Flaticon.com</u></a></p>
-            <p><br></p>
-            <p>Goose HONK! Sound - <a href="https://quicksounds.com/sound/22715/"><u>https://quicksounds.com/sound/22715/</u></a></p>
-            <p>Available on <a href="http://quicksounds.com"><u>quicksounds.com</u></a></p>
-            <p><br></p>
-            <p>Smartphone icon by Special Flat - <a href="https://www.freepik.com/icon/smartphone_2482945"><u>https://www.freepik.com/icon/smartphone_2482945</u></a></p>
-            <p>Available on <a href="http://flaticon.com"><u>Flaticon.com</u></a></p>
-        </div>
-    </section>
 </main>
 
 <footer class="footer">

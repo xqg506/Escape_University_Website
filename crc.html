@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENG1 Project - Cohort 4 Team 6</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <h1>Escape from Uni</h1>
+        <p class="subtitle">ENG1 Project - Cohort 4 Team 6</p>
+        <nav class="nav">
+            <a href="index.html">Overview</a>
+            <a href="files.html">Project Docs</a>
+            <div class="dropdown">
+                <a id = "active"href="#architecture-design" class="dropbtn">Architecture Design </a>
+                <div class="dropdown-content">
+                    <a id = "active"href = "crc.html">CRC cards</a>
+                    <a href="sequence-diagrams.html">Sequence Diagrams</a>
+                    <a href="class-diagrams.html">Class Diagrams</a>
+                    <a href="ecs.html">Entity-Component-System</a>
+                </div>
+            </div>
+            <a href = "attributions.html">Attributions</a>
+        </nav>
+    </div>
+</header>
+<main>
+
+
+   <section id="crc" class="section">
+        <div class="container">
+            <h2>Classes</h2>
+            <p>We used CRC (Class–Responsibility–Collaboration) cards to model the game’s object-oriented structure.</p>
+
+            <div class="crc-grid">
+                <div class="crc-card">
+                    <h3>Main</h3>
+                    <p><strong>Responsibilities:<br></strong>
+                        - Start the game<br>
+                        - Create main Screen instances<br>
+                        - Initialize global resources (sound effects, fonts, etc.)</p>
+                    <p><strong>Collaborators:</strong> GameScreen, AudioManager </p>
+                </div>
+
+                <div class="crc-card">
+                    <h3>GameScreen</h3>
+                    <p><strong>Responsibilities:</strong>
+                        - Manage the main game loop
+                        - Render the map
+                        - Update player and item states
+                        - Detect collisions</p>
+                    <p><strong>Collaborators:</strong> Player, Goose, BuildingManager, Collectable, Lighting </p>
+                </div>
+
+                <div class="crc-card">
+                    <h3>Player</h3>
+                    <p><strong>Responsibilities:</strong>
+                        - Control player movement
+                        - Handle input processing
+                        - Collect items
+                        - Manage score</p>
+                    <p><strong>Collaborators:</strong> GameScreen, Goose, Collectable </p>
+                </div>
+
+                <div class="crc-card">
+                    <h3>Goose</h3>
+                    <p><strong>Responsibilities:</strong>
+                        - Enemy implementation
+                        - Torch stealing logic
+                        - Escape and chasing behavior</p>
+                    <p><strong>Collaborators:</strong> GameScreen, Player </p>
+                </div>
+
+                <div class="crc-card">
+                    <h3>BuildingManager</h3>
+                    <p><strong>Responsibilities:</strong>
+                        - Manage map buildings and obstacles
+                        - Provide collision detection</p>
+                    <p><strong>Collaborators:</strong> GameScreen, Player, Goose </p>
+                </div>
+
+                <div class="crc-card">
+                    <h3>Collectable</h3>
+                    <p><strong>Responsibilities:</strong>
+                        - Define collectible item properties
+                        - Implement interaction logic</p>
+                    <p><strong>Collaborators:</strong> GameScreen, Player </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 Cohort 4 Team 6 - University of York</p>
+    </div>
+</footer>
+    </body>
+    </html>

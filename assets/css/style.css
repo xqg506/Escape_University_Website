@@ -80,47 +80,40 @@ header {
 }
 
 /* Grids */
-.features-grid,
 .crc-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
-
-/* Feature Cards & Team Members */
 .feature-card,
 .crc-card {
     background: rgba(255, 255, 255, 0.1);
-    padding: 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
+    padding: 1.5rem;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s;
     color: #e8e6e3;
 }
-
 .feature-card:hover,
 .crc-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 40px rgba(255, 184, 77, 0.2);
-    border-color: #ffb84d;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
-/* CRC Cards Specific */
-.crc-card {
-    padding: 1.5rem;
-}
 
 .crc-card p {
     margin-bottom: 0.8rem;
     line-height: 1.5;
+
 }
 
 .crc-card strong {
     color: #ffb84d;
 }
+
 
 .crc-card h3 {
     width: 100%;
@@ -167,10 +160,12 @@ header {
 .doc-link {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1.5rem;
     text-decoration: none;
     border-radius: 5px;
     transition: all 0.3s;
+    white-space: nowrap;
+    margin-left: 1rem;
     border: 1px solid transparent;
 }
 
@@ -190,7 +185,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem;
+    padding: 1rem;
     margin-bottom: 0.5rem;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;

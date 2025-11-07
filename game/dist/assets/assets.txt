@@ -36,8 +36,8 @@ i:sprites/maleSprite.png:sprites/maleSprite-0085195bf8b89e0a0a3047cdc49ce3e9.png
 i:sprites/receptionist.png:sprites/receptionist-2a79385aabd2bc3e87afb4d13a5f85cf.png:495:image/png:1
 d:tileMap:tileMap:0:application/unknown:1
 t:tileMap/boundaryTiles.xml:tileMap/boundaryTiles-4b0ed767e10306d52c44024da7e3f465.xml:225:application/xml:1
-i:tileMap/map.png:tileMap/map-a11c309914b250ad4507c4d716e5e321.png:1017875:image/png:1
-b:tileMap/map.tmx:tileMap/map-4b912f6a16ba3897bedff123d64e815a.tmx:80591:application/unknown:1
+i:tileMap/map.png:tileMap/map-8e28c7ed9e1e78f11b2b862e3652df1c.png:1485113:image/png:1
+b:tileMap/map.tmx:tileMap/map-efbf3f526242171e3df416efe4232ad5.tmx:80591:application/unknown:1
 i:tileMap/tiles.png:tileMap/tiles-b55c661b5c4b3ebacf67f9468a0ebfd3.png:780:image/png:1
 t:com/badlogic/gdx/graphics/g3d/particles/particles.fragment.glsl:particles.fragment-b90524761fdf09b0a836056d590c30b8.glsl:820:application/unknown:1
 t:com/badlogic/gdx/graphics/g3d/particles/particles.vertex.glsl:particles.vertex-f25b8b2fae10b9bfa09bfdd484923148.glsl:2886:application/unknown:1

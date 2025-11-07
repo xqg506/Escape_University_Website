@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stakeholder Interview Questions - ENG1 Project</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="head">
+        <header class="header">
+            <div class="container">
+                <h1>Escape from University</h1>
+                <p class="subtitle">ENG1 Project - Cohort 4 Team 6</p>
+            </div>
+        </header>
+
+        <header class="nav">
+            <div class="container">
+                <nav>
+                    <a href="index.html">Overview</a>
+                    <a href="files.html">Project Docs</a>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Architecture Design</a>
+                        <div class="dropdown-content">
+                            <a href="crc.html">CRC cards</a>
+                            <a href="crcReferences.html">CRC to requirements map</a>
+                            <a href="sequence-diagrams.html">Sequence Diagrams</a>
+                            <a href="class-diagrams.html">Class Diagrams</a>
+                        </div>
+                    </div>
+                    <a href="progressPlan.html">Planning</a>
+                    <div class = "dropdown">
+                        <a href="" class="dropbtn">Requirements</a>
+                        <div class="dropdown-content">
+                            <a href="interviewQuestions.html">Interview Qs</a>
+                        </div>  
+                    </div>
+                    <a href="attributions.html">Attributions</a>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <section class="section" id="requirements">
+            <div class="container">
+                <h2>Questions For Meeting:</h2>
+                <p>This is a list of things we considered when planning our project and preparing for the interview.</p>
+                <br>
+                <p>Our stakeholder is Tommy, a software developer that is well versed in software development. He is our stakeholder and client however he may not be the main user.</p>
+                <br>
+                <h2>User Requirements:</h2>
+                <ul>
+                    <li>Who are the main users of our product going to be?</li>
+                    <li>Is this product intended for all age ranges, does this need to be reflected in its difficulty/the contents and themes of the product?</li>
+                    <li>Other stakeholders include public bodies/regulators and the public view. How ought these stakeholders be included in the project and how should they influence the final outcome?</li>
+                </ul>
+                <br>
+
+                <h2>Non-Functional Requirements:</h2>
+
+                <h3>Visuals and audio</h3>
+                <ul>
+                    <li>Should the game be a top down view or another style of 2D? Like platformer maze style? E.g. shovel knight, fire boy and water girl.</li>
+                    <li>What style graphics should be used?</li>
+                    <li>Should there be sound effects for certain activities?</li>
+                    <li>Should there be any music?</li>
+                    <li>Should there be colour modes?</li>
+                </ul>
+
+                <h3>Technical</h3>
+                <ul>
+                    <li>What is the target platform for the maze game?</li>
+                    <li>What are the performance expectations of the game? What similar game has similar performance expectations?</li>
+                    <li>Is there a minimum level of hardware that is required to run the game?</li>
+                    <li>Is there inspiration from preexisting games that ought to be taken into consideration? What aspects of these game/s do you like and dislike?</li>
+                    <li>Should the game be able to run offline/online or both?</li>
+                </ul>
+                <br>
+
+                <h2>Functional Requirements:</h2>
+
+                <h3>Maze Design</h3>
+                <ul>
+                    <li>What is the goal of the maze game? How long should it take to reach the goal?</li>
+                    <li>Is it a casual game or is it competitive and in what way?</li>
+                    <li>How should the maze work, should its design be pre generated, or generate itself in some way?</li>
+                    <li>How complex should the maze be? How large should it be, should it branch to other smaller mazes/maps, should there be dead ends?</li>
+                    <li>Should there be a difficulty progression as the player continues?</li>
+                    <li>Should the game have a “checkpoint” or respawn point for harder sections of the game so that players need not restart from the beginning if they fail?</li>
+                </ul>
+
+                <h3>Players and Game Characters</h3>
+                <ul>
+                    <li>What should the player controls be? (Leads on from what console the maze game is intended for)</li>
+                    <li>Ought there be multiple characters to choose from?</li>
+                    <li>Does the player have a health counter, or stamina or some currency to “spend” in some regard?</li>
+                    <li>Should the player have any abilities? (run, jumps, interact, break things etc)</li>
+                    <li>What “enemies” ought there be, or characters that hinder the player and what should their role be? Should they have an individual moveset? Should they be patrolling enemies? Or should they be able to “sense” the player being nearby?</li>
+                    <li>Should there be traps? Ways to avoid traps? Can the player easily avoid these or should they be required interactions?</li>
+                    <li>Are there time limits to get to certain areas/complete certain tasks so that the player can fail?</li>
+                </ul>
+
+                <h3>Goals and Rewards/Achievements</h3>
+                <ul>
+                    <li>What are the conditions for the player to “win”?</li>
+                    <li>Can the player win in various different ways?</li>
+                    <li>Are there collectable points/coins/collectables that the player can find to improve their score? Is the score based on this alone or is there a timer that times how long it takes for a player to complete a task or achieve the winning conditions?</li>
+                    <li>Should there be unlockable content? Based on the success of the player in previous runs?</li>
+                </ul>
+
+                <h3>More Features</h3>
+                <ul>
+                    <li>What should the UI look like?</li>
+                    <li>Need there be a pause menu, settings menu, difficulty, graphics etc?</li>
+                    <li>Should there be a save function, from which you can load an old saved game?</li>
+                    <li>Should the game have a leaderboard, should this be local?</li>
+                    <li>Is the game multiplayer or single player?</li>
+                    <li>Should there be a tutorial for players? Or a storyline that leads the players to explore all aspects of the game. This could involve cutscenes or new screens such as puzzles that overall are linked to the main goal of the game</li>
+                </ul>
+                <br>
+                        <h2>Game Plan</h2>
+
+                <h3>Goal of the game</h3>
+                <ul>
+                    <li>Start in Langwith, you’ve locked yourself out (no phone) trying to make the bus for your night out, need to go to Ron Cooke Hub to get your card replacement (currently daytime). This will take time to navigate.</li>
+                    <li>Side map: enter Ron Cooke Hub, text box, get your keycard, become dark outside, now get given a torch.</li>
+                    <li>Exit back to the main map (now dark). Press a button to turn the torch on.</li>
+                    <li>While navigating back to Langwith to retrieve a phone, goose steals your torch, catch the goose to get it back. You get bonus points if the goose is caught before stopping to rest.</li>
+                    <li>Enter Langwith (side map), get your phone, get food (positive interaction - gain speed boost etc), leave accomodation and make it to the bus station in time for the bus/timer and gain points based on time remaining.</li>
+                </ul>
+
+                <ul>
+                    <li>Need a local highscore and leaderboard - should be a name enter for the leaderboard.</li>
+                    <li>Need to store this somewhere - external database (?).</li>
+                    <li>Should be a menu/pause/options screen along with character selection.</li>
+                    <li>Other hindrances: don't get hit by cyclists/bus.</li>
+                    <li>Cornered by your supervisor - timer is still going - 20 second cutscene.</li>
+                    <li>Have to hold your keycard by keeping left click down - otherwise you drop it.</li>
+                    <li>If you go in the lake you are slower, the goose moves faster - goose always ends its run in the lake (2 different paths that the goose can take).</li>
+                    <li>Collectable thing that directly increases your score.</li>
+                </ul>
+
+                <h3>UI</h3>
+                <ul>
+                    <li>Score in the top</li>
+                    <li>timer - when the timer runs out automatically fails.</li>
+                    <li>Pause button + pause screen</li>
+                    <li>Fail screen</li>
+                    <li>Win screen - display score and leaderboard - score = points+ remaining time (?) - show the points makeup</li>
+                    <li>Quit or replay options</li>
+                    <li>Mission text</li>
+                </ul>
+
+                <h3>Additional considerations</h3>
+                <p>
+                    Child friendly,<br>
+                    Different screen sizes<br>
+                    Different operating systems, linux, windows, max<br>
+                    Consider simple solutions for Colourblindness,<br>
+                    Timer, basic counter<br>
+                    It needs to be a challenge but not too difficult.<br>
+                    2d, top down<br>
+                    Clear graphics, consider user group<br>
+                    Yes - sound and music, turn sounds on and off
+                </p>
+
+            </div>
+        </section>
+        </main>
+        </body>
+        </html>
